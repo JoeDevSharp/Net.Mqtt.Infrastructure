@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="../../../../Net.Mqtt.Infrastructure/Net.Mqtt.Infrastructure.csproj"
+                      Condition="Exists('../../../../Net.Mqtt.Infrastructure/Net.Mqtt.Infrastructure.csproj')" />
+    <PackageReference Include="Net.Mqtt.Infrastructure" Version="2.2.1"
+                      Condition="!Exists('../../../../Net.Mqtt.Infrastructure/Net.Mqtt.Infrastructure.csproj')" />
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+</Project>

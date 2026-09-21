@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="../Mint.Sales.WorkerService.OrderProcessing.Application/Mint.Sales.WorkerService.OrderProcessing.Application.csproj" />
+    <ProjectReference Include="../Mint.Sales.WorkerService.OrderProcessing.Domain/Mint.Sales.WorkerService.OrderProcessing.Domain.csproj" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="10.0.0" />
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,92 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mint.Sales.WorkerService.OrderProcessing.Domain", "src\Mint.Sales.WorkerService.OrderProcessing.Domain\Mint.Sales.WorkerService.OrderProcessing.Domain.csproj", "{0D9A1011-8061-40D8-944F-4537B8D84911}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mint.Sales.WorkerService.OrderProcessing.Application", "src\Mint.Sales.WorkerService.OrderProcessing.Application\Mint.Sales.WorkerService.OrderProcessing.Application.csproj", "{BFF7F54B-4837-40EA-B140-E9E6BE084129}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mint.Sales.WorkerService.OrderProcessing.Messaging", "src\Mint.Sales.WorkerService.OrderProcessing.Messaging\Mint.Sales.WorkerService.OrderProcessing.Messaging.csproj", "{C1F10BFD-A60D-45E2-BAC9-FD2FC09B0200}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mint.Sales.WorkerService.OrderProcessing.Infrastructure", "src\Mint.Sales.WorkerService.OrderProcessing.Infrastructure\Mint.Sales.WorkerService.OrderProcessing.Infrastructure.csproj", "{90F0609C-7137-472B-868B-82155F705077}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mint.Sales.WorkerService.OrderProcessing.Worker", "src\Mint.Sales.WorkerService.OrderProcessing.Worker\Mint.Sales.WorkerService.OrderProcessing.Worker.csproj", "{A2731C80-729C-4393-B243-B2C32652F831}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mint.Sales.WorkerService.OrderProcessing.Domain.Tests", "tests\Mint.Sales.WorkerService.OrderProcessing.Domain.Tests\Mint.Sales.WorkerService.OrderProcessing.Domain.Tests.csproj", "{FC729A51-2DCB-4C42-A1C2-F45C1D4999C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mint.Sales.WorkerService.OrderProcessing.Application.Tests", "tests\Mint.Sales.WorkerService.OrderProcessing.Application.Tests\Mint.Sales.WorkerService.OrderProcessing.Application.Tests.csproj", "{0794D6E3-BD58-4CF1-8B2A-0DA317550856}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mint.Sales.WorkerService.OrderProcessing.Worker.IntegrationTests", "tests\Mint.Sales.WorkerService.OrderProcessing.Worker.IntegrationTests\Mint.Sales.WorkerService.OrderProcessing.Worker.IntegrationTests.csproj", "{EC1BF8DE-8104-4C9E-8763-A566057F77AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{10000000-0000-4000-8000-000000000001}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{10000000-0000-4000-8000-000000000002}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapters", "Adapters", "{10000000-0000-4000-8000-000000000003}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Host", "Host", "{10000000-0000-4000-8000-000000000004}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{20000000-0000-4000-8000-000000000001}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit", "Unit", "{20000000-0000-4000-8000-000000000002}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{20000000-0000-4000-8000-000000000003}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D9A1011-8061-40D8-944F-4537B8D84911}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D9A1011-8061-40D8-944F-4537B8D84911}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D9A1011-8061-40D8-944F-4537B8D84911}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D9A1011-8061-40D8-944F-4537B8D84911}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFF7F54B-4837-40EA-B140-E9E6BE084129}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFF7F54B-4837-40EA-B140-E9E6BE084129}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFF7F54B-4837-40EA-B140-E9E6BE084129}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFF7F54B-4837-40EA-B140-E9E6BE084129}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1F10BFD-A60D-45E2-BAC9-FD2FC09B0200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1F10BFD-A60D-45E2-BAC9-FD2FC09B0200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1F10BFD-A60D-45E2-BAC9-FD2FC09B0200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1F10BFD-A60D-45E2-BAC9-FD2FC09B0200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90F0609C-7137-472B-868B-82155F705077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90F0609C-7137-472B-868B-82155F705077}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90F0609C-7137-472B-868B-82155F705077}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90F0609C-7137-472B-868B-82155F705077}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2731C80-729C-4393-B243-B2C32652F831}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2731C80-729C-4393-B243-B2C32652F831}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2731C80-729C-4393-B243-B2C32652F831}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2731C80-729C-4393-B243-B2C32652F831}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC729A51-2DCB-4C42-A1C2-F45C1D4999C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC729A51-2DCB-4C42-A1C2-F45C1D4999C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC729A51-2DCB-4C42-A1C2-F45C1D4999C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC729A51-2DCB-4C42-A1C2-F45C1D4999C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0794D6E3-BD58-4CF1-8B2A-0DA317550856}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0794D6E3-BD58-4CF1-8B2A-0DA317550856}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0794D6E3-BD58-4CF1-8B2A-0DA317550856}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0794D6E3-BD58-4CF1-8B2A-0DA317550856}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC1BF8DE-8104-4C9E-8763-A566057F77AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC1BF8DE-8104-4C9E-8763-A566057F77AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC1BF8DE-8104-4C9E-8763-A566057F77AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC1BF8DE-8104-4C9E-8763-A566057F77AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{10000000-0000-4000-8000-000000000002} = {10000000-0000-4000-8000-000000000001}
+		{10000000-0000-4000-8000-000000000003} = {10000000-0000-4000-8000-000000000001}
+		{10000000-0000-4000-8000-000000000004} = {10000000-0000-4000-8000-000000000001}
+		{0D9A1011-8061-40D8-944F-4537B8D84911} = {10000000-0000-4000-8000-000000000002}
+		{BFF7F54B-4837-40EA-B140-E9E6BE084129} = {10000000-0000-4000-8000-000000000002}
+		{C1F10BFD-A60D-45E2-BAC9-FD2FC09B0200} = {10000000-0000-4000-8000-000000000003}
+		{90F0609C-7137-472B-868B-82155F705077} = {10000000-0000-4000-8000-000000000003}
+		{A2731C80-729C-4393-B243-B2C32652F831} = {10000000-0000-4000-8000-000000000004}
+		{20000000-0000-4000-8000-000000000002} = {20000000-0000-4000-8000-000000000001}
+		{20000000-0000-4000-8000-000000000003} = {20000000-0000-4000-8000-000000000001}
+		{FC729A51-2DCB-4C42-A1C2-F45C1D4999C1} = {20000000-0000-4000-8000-000000000002}
+		{0794D6E3-BD58-4CF1-8B2A-0DA317550856} = {20000000-0000-4000-8000-000000000002}
+		{EC1BF8DE-8104-4C9E-8763-A566057F77AE} = {20000000-0000-4000-8000-000000000003}
+	EndGlobalSection
+EndGlobal

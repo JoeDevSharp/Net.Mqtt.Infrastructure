@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+  <ItemGroup>
+    <ProjectReference Include="../Mint.Sales.WorkerService.OrderProcessing.Application/Mint.Sales.WorkerService.OrderProcessing.Application.csproj" />
+    <ProjectReference Include="../Mint.Sales.WorkerService.OrderProcessing.Infrastructure/Mint.Sales.WorkerService.OrderProcessing.Infrastructure.csproj" />
+    <ProjectReference Include="../Mint.Sales.WorkerService.OrderProcessing.Messaging/Mint.Sales.WorkerService.OrderProcessing.Messaging.csproj" />
+  </ItemGroup>
+</Project>

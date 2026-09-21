@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Net.Mqtt.Infrastructure",
+  "classifications": [ "Worker Service", "MQTT", "CloudEvents", "Clean Architecture" ],
+  "identity": "Net.Mqtt.Infrastructure.Templates.WorkerService",
+  "name": "MQTT Application Worker Service",
+  "shortName": "mqtt-worker-service",
+  "sourceName": "Mint.Sales.WorkerService.OrderProcessing",
+  "defaultName": "Company.Domain.WorkerService.Capability",
+  "preferNameDirectory": true,
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  },
+  "sources": [
+    {
+      "modifiers": [
+        { "exclude": [ "**/bin/**", "**/obj/**", ".artifacts/**", ".vs/**", ".template.config/**" ] }
+      ]
+    }
+  ]
+}

@@ -11,12 +11,12 @@
     <Authors>JoeDevSharp</Authors>
     <Description>Net.Mqtt.Infrastructure is a lightweight Reactive Object Mapper (ROM) for MQTT-based applications in .NET. It abstracts MQTT topics as strongly typed, observable entities, enabling developers to handle real-time data streams using LINQ-style syntax and reactive programming patterns.</Description>
     <PackageProjectUrl>https://github.com/JoeDevSharp</PackageProjectUrl>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReadmeFile></PackageReadmeFile>
     <RepositoryUrl>https://github.com/JoeDevSharp/Net.Mqtt.Infrastructure</RepositoryUrl>
     <PackageIcon>JoeDevSharp.MqttNet.ReactiveBinding.logo.png</PackageIcon>
     <RootNamespace>$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
     <PackageTags>mqtt, mqttnet, mqtt5, mqtt-3.1.1, dotnet, worker-service, messaging, infrastructure, cloud-events, cloudevents, mtls, tls, reactive, async-enumerable, typed-messaging, typed-topics, pubsub, event-driven, schema-validation, json-schema, contract-validation, persistent-sessions, reconnection, backpressure, acknowledgement, observability, iot</PackageTags>
-    <Version>2.2.1</Version>
+    <Version>2.2.3</Version>
     <Copyright></Copyright>
     <PackageOutputPath>bin/nuget</PackageOutputPath>
     <Product>$(AssemblyName)</Product>
@@ -29,10 +29,6 @@
 
   <ItemGroup>
     <None Include="..\JoeDevSharp.MqttNet.ReactiveBinding.logo.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Include="..\README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>

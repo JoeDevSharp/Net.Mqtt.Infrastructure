@@ -1,0 +1,43 @@
+name: order-processing
+
+services:
+  mqtt:
+    image: eclipse-mosquitto:2.0
+    restart: unless-stopped
+    ports:
+      - "1883:1883"
+    volumes:
+      - ./docker/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+      - mqtt-data:/mosquitto/data
+    healthcheck:
+      test: ["CMD-SHELL", "mosquitto_sub -h localhost -p 1883 -t '$$SYS/broker/version' -C 1 -W 3 >/dev/null 2>&1"]
+      interval: 5s
+      timeout: 4s
+      retries: 10
+      start_period: 5s
+
+  worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    depends_on:
+      mqtt:
+        condition: service_healthy
+    environment:
+      DOTNET_ENVIRONMENT: Production
+      Mqtt__Host: mqtt
+      Mqtt__Port: "1883"
+      Mqtt__ClientId: order-processing-worker-compose
+      Mqtt__BaseTopic: mint/v1
+      Mqtt__ModuleIdentity: sales
+      Mqtt__ServiceIdentity: order-processing
+      Mqtt__CloudEventSource: urn:mint:sales:order-processing
+      Mqtt__UseInMemoryTransport: "false"
+      Persistence__DatabaseName: order-processing-compose
+      CustomerCatalog__BaseUrl: http://host.docker.internal:7040/
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+volumes:
+  mqtt-data:

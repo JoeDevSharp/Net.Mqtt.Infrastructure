@@ -1,0 +1,25 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <LangVersion>latest</LangVersion>
+    <!-- Keep generated MSBuild paths below Windows MAX_PATH even when the template
+         is created under a deep repository directory. -->
+    <TemplateProjectKey Condition="'$(MSBuildProjectName)' == 'Mint.Sales.WorkerService.OrderProcessing.Domain'">domain</TemplateProjectKey>
+    <TemplateProjectKey Condition="'$(MSBuildProjectName)' == 'Mint.Sales.WorkerService.OrderProcessing.Application'">app</TemplateProjectKey>
+    <TemplateProjectKey Condition="'$(MSBuildProjectName)' == 'Mint.Sales.WorkerService.OrderProcessing.Messaging'">msg</TemplateProjectKey>
+    <TemplateProjectKey Condition="'$(MSBuildProjectName)' == 'Mint.Sales.WorkerService.OrderProcessing.Infrastructure'">infra</TemplateProjectKey>
+    <TemplateProjectKey Condition="'$(MSBuildProjectName)' == 'Mint.Sales.WorkerService.OrderProcessing.Worker'">worker</TemplateProjectKey>
+    <TemplateProjectKey Condition="'$(MSBuildProjectName)' == 'Mint.Sales.WorkerService.OrderProcessing.Domain.Tests'">domain-tests</TemplateProjectKey>
+    <TemplateProjectKey Condition="'$(MSBuildProjectName)' == 'Mint.Sales.WorkerService.OrderProcessing.Application.Tests'">app-tests</TemplateProjectKey>
+    <TemplateProjectKey Condition="'$(MSBuildProjectName)' == 'Mint.Sales.WorkerService.OrderProcessing.Worker.IntegrationTests'">integration-tests</TemplateProjectKey>
+    <TemplateProjectKey Condition="'$(TemplateProjectKey)' == ''">project</TemplateProjectKey>
+    <TemplateArtifactsRoot>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory).artifacts'))</TemplateArtifactsRoot>
+    <BaseIntermediateOutputPath>$(TemplateArtifactsRoot)\obj\$(TemplateProjectKey)\</BaseIntermediateOutputPath>
+    <MSBuildProjectExtensionsPath>$(BaseIntermediateOutputPath)</MSBuildProjectExtensionsPath>
+    <BaseOutputPath>$(TemplateArtifactsRoot)\bin\$(TemplateProjectKey)\</BaseOutputPath>
+    <DefaultItemExcludes>$(DefaultItemExcludes);**\bin\**;**\obj\**;$(TemplateArtifactsRoot)\**</DefaultItemExcludes>
+  </PropertyGroup>
+</Project>
